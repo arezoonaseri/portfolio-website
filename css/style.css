@@ -1,0 +1,25 @@
+/*
+Colors used
+color black #1c1c1c
+color dark gray #7f8084
+color light gray #f3f3f3
+color white #ffffff
+ */
+
+ body {
+   font-family: 'Open Sans', sans-serif;
+   font-size: 16px; /* Sets the font size to 16px */
+   line-height: 1.6; /* Sets the line-height to 1.6 */
+ }
+
+ h1 {
+   font-size: 28px;
+ }
+
+ h2 {
+   font-size: 22px;
+ }
+
+ h3 {
+   font-size: 18px;
+ }
