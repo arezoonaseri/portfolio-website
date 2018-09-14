@@ -4,22 +4,99 @@ color black #3b3b3b
 color dark gray #7f8084
 color light gray #ebecee
 color white #ffffff
- */
+*/
 
- body {
-   font-family: 'Open Sans', sans-serif;
-   font-size: 16px; /* Sets the font size to 16px */
-   line-height: 1.6; /* Sets the line-height to 1.6 */
- }
+body {
+  background-color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
 
- h1 {
-   font-size: 32px;
- }
+.root {
+  --black: #3b3b3b;
+  --darkgray: #7f8084;
+  --lightgray: #ebecee;
+  --white: #ffffff;
+}
 
- h2 {
-   font-size: 24px;
- }
+h1 {
+  font-family: Open Sans;
+  font-size: 32px;
+  font-weight:700;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: black;
 
- h3 {
-   font-size: 18px;
- }
+}
+
+h2 {
+  font-family: Open Sans;
+  font-size: 24px;
+  font-weight:700;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: black;
+}
+
+h3 {
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight:700;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: black;
+}
+
+div {
+  padding: 10px;
+  margin: 10px;
+}
+
+a {
+  color: darkgray;
+}
+
+a:visited {
+  text-decoration: none;
+  color: darkgray;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+a:active {
+  text-decoration: underline;
+  color: black;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+button { /* butten will be used for view project on project images in homepage and project page */
+  border: white;
+  font-family: inherit;
+  background-color: none;
+  color: white !important; /* is this font color? what important; value does? */
+  text-decoration: none;
+  padding: 10px;
+  border-radius: none;
+  border-bottom: 2px solid #white;
+  transition: 0.2s opacity;
+}
+
+button:hover,
+button:focus {
+  cursor: default;
+  opacity: 0.8; /* Reduces the opactiy of the button to 80% */
+}
