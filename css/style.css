@@ -19,122 +19,63 @@ body {
 }
 
 h1 {
-  font-size: 32px;
+  font-size: 2em;
   font-weight:700;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
   color: #3b3b3b;
-
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 1.5em;
   font-weight:700;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
   color: #3b3b3b;
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 1.2em;
   font-weight:700;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
   color: #3b3b3b;
 }
 
-p {
-  font-size: 18px;
-  font-weight:400;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #3b3b3b;
+#hero p {
+  font-weight: 300;
+  font-size: 2em;
 }
-
 
 a {
-  color: darkgray;
+  color: #7f8084;
+  text-decoration: none;
 }
 
 a:visited {
   text-decoration: none;
-  color: darkgray;
-}
-
-a:hover {
-  text-decoration: underline;
-  color: black;
-}
-
-a:active {
-  text-decoration: underline;
-  color: black;
+  color: #7f8084;
 }
 
 a:hover,
 a:focus {
   text-decoration: underline;
+  color: #3b3b3b;
 }
 
-.button { /* butten will be used for view project on project images in homepage and project page */
-  border: #ffffff;
-  font-family: inherit;
-  background-color: none; /* the button will overlap image and imag has dark color overlay */
-  color: #ffffff !important;
-  text-decoration: none;
+a:active {
+  text-decoration: underline;
+  color: #7f8084;
+}
+
+
+.button {
+  border: 1px solid #ffffff;
+  background-color: #ebecee;
   padding: 10px;
   border-radius: none;
   border-bottom: 2px solid ##ffffff;
   transition: 0.2s opacity;
 }
 
+
 .button:hover,
- button:focus {
-  cursor: default;
-  opacity: 0.8; /* Reduces the opactiy of the button to 80% */
-}
-
-/* Layout styling */
-.wrapper {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
-  padding: 0 20px;
-}
-
-.columns-container {
-  font-size: 0;
-}
-
-.column-3 {
-  font-size: 16px;
-  width: 24%;
-  display: inline-block;
-  margin-right: 1%;
-}
-
-.preview-img {
-  max-width: 120%;
-}
-
-.navigation {
-  float: right;
-}
-
-.logo {
-font-family: 'Roboto', sans-serif;
-font-size: 16px;
-letter-spacing: 7px;
-text-decoration: none;
-float:left;
-color: #7f8084;
-background-color: #ffffff
+.button:focus {
+  cursor: pointer;
+  opacity: 0.8;
+  text-decoration: none;
 }
