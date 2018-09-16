@@ -4,60 +4,61 @@ color black #3b3b3b
 color dark gray #7f8084
 color light gray #ebecee
 color white #ffffff
+font-family: 'Roboto', sans-serif;
+font-family: 'Open Sans', sans-serif;
 */
 
+
 body {
-  background-color: white;
+  background-color: #ffffff;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1.6;
-}
-
-.root {
-  --black: #3b3b3b;
-  --darkgray: #7f8084;
-  --lightgray: #ebecee;
-  --white: #ffffff;
+  font-weight: 400;
+  color: #3b3b3b;
 }
 
 h1 {
-  font-family: Open Sans;
   font-size: 32px;
   font-weight:700;
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
   letter-spacing: normal;
-  color: black;
+  color: #3b3b3b;
 
 }
 
 h2 {
-  font-family: Open Sans;
   font-size: 24px;
   font-weight:700;
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
   letter-spacing: normal;
-  color: black;
+  color: #3b3b3b;
 }
 
 h3 {
-  font-family: Open Sans;
   font-size: 18px;
   font-weight:700;
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
   letter-spacing: normal;
-  color: black;
+  color: #3b3b3b;
 }
 
-div {
-  padding: 10px;
-  margin: 10px;
+p {
+  font-size: 18px;
+  font-weight:400;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #3b3b3b;
 }
+
 
 a {
   color: darkgray;
@@ -83,20 +84,57 @@ a:focus {
   text-decoration: underline;
 }
 
-button { /* butten will be used for view project on project images in homepage and project page */
-  border: white;
+.button { /* butten will be used for view project on project images in homepage and project page */
+  border: #ffffff;
   font-family: inherit;
-  background-color: none;
-  color: white !important; /* is this font color? what important; value does? */
+  background-color: none; /* the button will overlap image and imag has dark color overlay */
+  color: #ffffff !important;
   text-decoration: none;
   padding: 10px;
   border-radius: none;
-  border-bottom: 2px solid #white;
+  border-bottom: 2px solid ##ffffff;
   transition: 0.2s opacity;
 }
 
-button:hover,
-button:focus {
+.button:hover,
+ button:focus {
   cursor: default;
   opacity: 0.8; /* Reduces the opactiy of the button to 80% */
+}
+
+/* Layout styling */
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
+  padding: 0 20px;
+}
+
+.columns-container {
+  font-size: 0;
+}
+
+.column-3 {
+  font-size: 16px;
+  width: 24%;
+  display: inline-block;
+  margin-right: 1%;
+}
+
+.preview-img {
+  max-width: 120%;
+}
+
+.navigation {
+  float: right;
+}
+
+.logo {
+font-family: 'Roboto', sans-serif;
+font-size: 16px;
+letter-spacing: 7px;
+text-decoration: none;
+float:left;
+color: #7f8084;
+background-color: #ffffff
 }
