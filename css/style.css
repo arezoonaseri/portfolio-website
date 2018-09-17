@@ -1,13 +1,15 @@
 /*
 Colors used
 color black #3b3b3b
-color dark gray #7f8084
-color light gray #ebecee
+color medium gray #bfbfbf
+color light gray #dcdcdc
 color white #ffffff
 font-family: 'Roboto', sans-serif;
 font-family: 'Open Sans', sans-serif;
 */
-
+* {
+  box-sizing: border-box;
+}
 
 body {
   background-color: #ffffff;
@@ -36,19 +38,16 @@ h3 {
   color: #3b3b3b;
 }
 
-#hero p {
-  font-weight: 300;
-  font-size: 2em;
-}
+
 
 a {
-  color: #7f8084;
+  color: #bfbfbf;
   text-decoration: none;
 }
 
 a:visited {
   text-decoration: none;
-  color: #7f8084;
+  color: #bfbfbf;
 }
 
 a:hover,
@@ -59,15 +58,15 @@ a:focus {
 
 a:active {
   text-decoration: underline;
-  color: #7f8084;
+  color: #bfbfbf;
 }
 
 .button {
   border: 1px solid #ffffff;
-  background-color: #ebecee;
+  background-color: #ebebeb;
   padding: 10px;
   border-radius: none;
-  border-bottom: 2px solid ##ffffff;
+  border-bottom: 2px solid #ffffff;
   transition: 0.2s opacity;
 }
 
@@ -80,4 +79,143 @@ a:active {
 
 img {
   width: 100%;
+}
+
+/* Layout styling */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 0px;
+}
+
+header {
+  padding: 32px 0;
+}
+
+.logo {
+  float: left;
+  padding-top: 16px;
+  width: 33.33333%;
+}
+
+
+.logo {
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-size: 1em;
+  letter-spacing: 10px;
+  text-decoration: none;
+  color: #dcdcdc;
+}
+
+.logo:hover,
+.logo:visited {
+  text-decoration: none;
+  color: #dcdcdc;
+}
+
+/* sticky navigation bar.*/
+
+nav {
+  display: inline-block;
+}
+
+nav ul{
+  list-style-type: none;
+  display: inline-block;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  float: left;
+  padding-right: 30px;
+}
+
+
+nav ul li:hover {
+  text-decoration: underline;
+}
+
+nav ul li:visited,
+nav ul li:focus,
+nav ul li:active {
+  text-decoration: none; /* what code will change the color for nav text when user is visiting an one of the under pages.*/
+}
+
+#hero {
+  padding: 0 0 40px 0;
+
+}
+
+#hero h1{
+  margin-bottom: 0;
+}
+
+#hero p {
+  font-weight: 300;
+  font-size: 2em;
+  margin-top: 0;
+}
+
+#hero a {
+  font-weight: 700;
+  font-size: 2em;
+}
+
+#hero h1, #hero p, #hero a {
+  padding-left:33%;
+}
+
+
+#projects {
+  background-color: #dcdcdc;
+  padding-bottom: 90px;
+}
+
+
+.column {
+  width: 33%;
+  display: inline-block;
+  padding:0 10px;
+}
+.row {
+  display: table;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+footer {
+  background-color: #3b3b3b;
+  color:#bfbfbf;
+}
+
+footer h2 {
+  color:#bfbfbf;
+  padding-top: 60px;
+  padding-left: 33.33333%;
+  padding-bottom: 60px;
+  margin: 0 auto;
+}
+
+.row-contact {
+  padding-left: 34%;
+}
+
+.contact-info {
+  float: left;
+  width: 33.33333%;
+}
+
+.social-media {
+  display: inline-block;
+  float: left;
+}
+ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+.small-text {
+  padding-left: 33.33333%;
 }
