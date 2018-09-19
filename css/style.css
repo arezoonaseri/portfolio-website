@@ -17,25 +17,23 @@ body {
   font-size: 16px;
   line-height: 1.6;
   font-weight: 400;
-  color: #3b3b3b;
+  color: #222222;
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 2.4em;
   font-weight:700;
-  color: #3b3b3b;
+  padding-top: .5em;
 }
 
 h2 {
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight:700;
-  color: #3b3b3b;
 }
 
 h3 {
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight:700;
-  color: #3b3b3b;
 }
 
 
@@ -46,7 +44,6 @@ a {
 }
 
 a:visited {
-  text-decoration: none;
   color: #bfbfbf;
 }
 
@@ -68,11 +65,11 @@ a:active {
   border-radius: none;
   border-bottom: 2px solid #ffffff;
   transition: 0.2s opacity;
+  display: inline-block;
 }
 
 .button:hover,
 .button:focus {
-  cursor: pointer;
   opacity: 0.8;
   text-decoration: none;
 }
@@ -86,7 +83,7 @@ img {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 0px;
+  padding: 0 20px;
 }
 
 header {
@@ -104,7 +101,7 @@ header {
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
   font-size: 1em;
-  letter-spacing: 10px;
+  letter-spacing: .8em;
   text-decoration: none;
   color: #dcdcdc;
 }
@@ -146,7 +143,6 @@ nav ul li:active {
 
 #hero {
   padding: 0 0 40px 0;
-
 }
 
 #hero h1{
@@ -161,7 +157,7 @@ nav ul li:active {
 
 #hero a {
   font-weight: 700;
-  font-size: 2em;
+  font-size: 2.4em;
 }
 
 #hero h1, #hero p, #hero a {
@@ -170,16 +166,20 @@ nav ul li:active {
 
 
 #projects {
-  background-color: #dcdcdc;
   padding-bottom: 90px;
+  padding-top: 60px;
+
 }
 
 
 .column {
-  width: 33%;
-  display: inline-block;
+  float:left;
   padding:0 10px;
 }
+.col-4 {
+  width: 33.33%;
+}
+
 .row {
   display: table;
   margin-left: -10px;
@@ -187,8 +187,9 @@ nav ul li:active {
 }
 
 footer {
-  background-color: #3b3b3b;
+  background-color: #222222;
   color:#bfbfbf;
+  padding-bottom: 20px;
 }
 
 footer h2 {
@@ -200,7 +201,9 @@ footer h2 {
 }
 
 .row-contact {
-  padding-left: 34%;
+  padding-left: 33.33%;
+  padding-bottom: 50px;
+  line-height: 2em;
 }
 
 .contact-info {
@@ -212,10 +215,38 @@ footer h2 {
   display: inline-block;
   float: left;
 }
+
 ul {
   padding-left: 0;
   list-style-type: none;
 }
 .small-text {
   padding-left: 33.33333%;
+  font-size: .8em;
+  color: #5e5e5e;
+  letter-spacing: .2em;
+
+}
+
+@media all and (max-width: 767px) {
+
+  #hero h1, #hero p, #hero a {
+    padding: 0 0px;
+  }
+
+  .col-4 {
+    width: 100%;
+  }
+
+  footer h2 {
+    padding-left: 0px;
+  }
+
+  .small-text {
+    padding-left: 10px;
+}
+.row-contact {
+  padding-left: 10px;
+}
+
 }
