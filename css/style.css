@@ -199,7 +199,7 @@ footer .column, #skills .column{
 }
 
 #brief .col-4, #discovering .col-4, #concepting .col-4, #designing .col-4, #testing .col-4, #visualising .col-4 {
-padding-top: 10px;
+  padding-top: 10px;
 }
 
 .row {
@@ -297,7 +297,7 @@ ul {
 
 .img-cover {
   padding-top: 60px;
-    height: 500px;
+  height: 500px;
 }
 
 /*layout styling for project page*/
@@ -328,7 +328,7 @@ ul {
   background-color: #ededed;
 }
 #discovering .container, #designing .container, #visualising .container, #testing .container, #concepting .container, #brief .container {
-padding-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 
