@@ -17,17 +17,16 @@ body {
   font-size: 16px;
   line-height: 1.6;
   font-weight: 400;
-  color: #222222;
+  color: #121212;
 }
 
 h1 {
   font-size: 2.4em;
   font-weight:700;
-  padding-top: .5em;
 }
 
 h2 {
-  font-size: 1.2em;
+  font-size: 1.6em;
   font-weight:700;
 }
 
@@ -35,8 +34,6 @@ h3 {
   font-size: 1em;
   font-weight:700;
 }
-
-
 
 a {
   color: #bfbfbf;
@@ -53,6 +50,11 @@ a:focus {
   color: #3b3b3b;
 }
 
+footer a:hover,
+footer a:focus {
+  color: #ffffff;
+}
+
 a:active {
   text-decoration: underline;
   color: #bfbfbf;
@@ -60,7 +62,7 @@ a:active {
 
 .button {
   border: 1px solid #ffffff;
-  background-color: #ebebeb;
+  background-color: #ffffff;
   padding: 10px;
   border-radius: none;
   border-bottom: 2px solid #ffffff;
@@ -74,11 +76,14 @@ a:active {
   text-decoration: none;
 }
 
+.button-container {
+  position: absolute;
+  bottom: 0;
+}
+
 img {
   width: 100%;
 }
-
-/* Layout styling */
 
 .container {
   max-width: 1200px;
@@ -91,19 +96,20 @@ header {
 }
 
 .logo {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1em;
+  letter-spacing: .5em;
+  text-decoration: none;
+  color: #dcdcdc;
   float: left;
   padding-top: 16px;
   width: 33.33333%;
 }
 
-
-.logo {
-  font-family: 'Roboto', sans-serif;
-  text-transform: uppercase;
-  font-size: 1em;
-  letter-spacing: .8em;
-  text-decoration: none;
-  color: #dcdcdc;
+span {
+  font-weight: 300; important;
 }
 
 .logo:hover,
@@ -130,19 +136,17 @@ nav ul li {
   padding-right: 30px;
 }
 
-
 nav ul li:hover {
   text-decoration: underline;
 }
 
 nav ul li:visited,
-nav ul li:focus,
 nav ul li:active {
   text-decoration: none; /* what code will change the color for nav text when user is visiting an one of the under pages.*/
 }
 
 #hero {
-  padding: 0 0 40px 0;
+  padding: 0 0 100px 0;
 }
 
 #hero h1{
@@ -151,8 +155,12 @@ nav ul li:active {
 
 #hero p {
   font-weight: 300;
-  font-size: 2em;
+  font-size: 2.4em;
   margin-top: 0;
+}
+
+#hero h1, #hero p {
+  display: inline;
 }
 
 #hero a {
@@ -160,24 +168,38 @@ nav ul li:active {
   font-size: 2.4em;
 }
 
-#hero h1, #hero p, #hero a {
-  padding-left:33%;
+.hero, footer h2, .row-contact ul:first-child, .small-text{
+  margin-left:33.33333%;
 }
 
+.hero, footer h2, .row-contact, .small-text, nav, {
+  padding-left: 10px;
+}
 
 #projects {
-  padding-bottom: 90px;
-  padding-top: 60px;
-
+  background-color: #ededed;
+  padding-bottom: 100px;
+  margin-bottom: -20px;
 }
-
 
 .column {
   float:left;
   padding:0 10px;
+  position: relative;
+  min-height: 500px;
 }
+
+footer .column, #skills .column{
+  min-height: unset;
+  padding-top: 30px;
+}
+
 .col-4 {
-  width: 33.33%;
+  width: 33.33333%;
+}
+
+#brief .col-4, #discovering .col-4, #concepting .col-4, #designing .col-4, #testing .col-4, #visualising .col-4 {
+padding-top: 10px;
 }
 
 .row {
@@ -186,8 +208,14 @@ nav ul li:active {
   margin-right: -10px;
 }
 
+
+footer .row {
+  width: 100%;
+  max-width: 100%;
+}
+
 footer {
-  background-color: #222222;
+  background-color: #121212;
   color:#bfbfbf;
   padding-bottom: 20px;
 }
@@ -195,20 +223,12 @@ footer {
 footer h2 {
   color:#bfbfbf;
   padding-top: 60px;
-  padding-left: 33.33333%;
-  padding-bottom: 60px;
-  margin: 0 auto;
+  padding-bottom: 30px;
 }
 
 .row-contact {
-  padding-left: 33.33%;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
   line-height: 2em;
-}
-
-.contact-info {
-  float: left;
-  width: 33.33333%;
 }
 
 .social-media {
@@ -221,32 +241,184 @@ ul {
   list-style-type: none;
 }
 .small-text {
-  padding-left: 33.33333%;
   font-size: .8em;
   color: #5e5e5e;
   letter-spacing: .2em;
-
 }
 
-@media all and (max-width: 767px) {
 
-  #hero h1, #hero p, #hero a {
-    padding: 0 0px;
+/*layout styling for about page*/
+
+#about h1 {
+  display: inline-block;
+}
+
+.col-8{
+  width: 66.66666%;
+  padding-top: 15px;
+}
+
+#about p {
+  display: inline-block;
+  float: left;
+}
+
+.strong-text {
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+#about .container {
+  padding-bottom: 50px;
+}
+
+#skills {
+  background-color: #ededed;
+}
+
+#skills .container {
+  padding-top: 50px;
+  padding-bottom: 90px;
+  margin-bottom: -20px;
+}
+
+#skills h2 {
+  width:33.33333%
+}
+
+.icon {
+  width: 45px;
+  display: inline-block;
+  float: left;
+  padding-right: 10px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.img-cover {
+  padding-top: 60px;
+    height: 500px;
+}
+
+/*layout styling for project page*/
+
+.next-row {
+  padding-top: 60px;
+}
+
+
+#brief .column, #discovering .column, #concepting .column, #designing .column, #testing .column, #visualising .column {
+  min-height: inherit;
+  padding-bottom: 60px;
+}
+
+.second-child {
+  margin-left: 33.33333%;
+}
+
+.img-wide {
+  width: 100%
+}
+
+.col-6 {
+  width: 50%;
+}
+
+#discovering, #designing, #visualising {
+  background-color: #ededed;
+}
+#discovering .container, #designing .container, #visualising .container, #testing .container, #concepting .container, #brief .container {
+padding-bottom: 30px;
+}
+
+
+
+/*smaller than 1023px*/
+@media all and (max-width: 1023px){
+  #hero {
+    padding: 0 0 60px 0;
   }
 
-  .col-4 {
-    width: 100%;
+  header {
+    padding: 15px 0;
   }
 
-  footer h2 {
-    padding-left: 0px;
+  #hero h1, #hero p, #hero a, #about h1 {
+    font-size: 1.8em;
   }
 
-  .small-text {
-    padding-left: 10px;
-}
-.row-contact {
-  padding-left: 10px;
-}
+  h2 {
+    font-size: 1.4em;
+  }
 
-}
+  .column {
+    min-height: 430px;
+  }
+
+  /*smaller than 767px*/
+
+  @media all and (max-width: 767px) {
+    #hero {
+      padding: 0 0 30px 0;
+    }
+
+    header {
+      padding: 10px 0;
+    }
+
+    nav ul li {
+      padding-right: 39px;
+    }
+
+    #hero h1, #hero p, #hero a, #about h1{
+      font-size: 1.3em;
+    }
+
+    .column {
+      min-height: unset;
+      position: unset;
+      padding-bottom: 30px;
+    }
+    #about .column {
+      padding-bottom: 0px;
+    }
+
+    .button-container {
+      position: unset;
+      bottom: 0;
+    }
+
+    .hero, footer h2, .row-contact ul:first-child, .small-text, .second-child{
+      margin-left:0px;
+    }
+
+    .hero, footer h2, .row-contact, .small-text, nav, {
+      padding-left: 0px;
+    }
+
+    .col-4 {
+      width: 100%;
+    }
+
+    #projects {
+      padding-bottom: 0;
+    }
+
+    .col-8{
+      width: 100%;
+      padding-top: unset;
+    }
+
+    .next-row {
+      padding-top: unset;
+    }
+
+    #brief .column, #discovering .column, #concepting .column, #designing .column, #testing .column, #visualising .column {
+      padding-bottom: 0px;
+    }
+
+    #brief .col-4 {
+      padding-bottom: 0px;
+    }
+
+  }
