@@ -222,6 +222,7 @@ footer {
 
 footer h2 {
   color:#bfbfbf;
+  margin-top: 0;
   padding-top: 60px;
   padding-bottom: 30px;
 }
@@ -279,7 +280,6 @@ ul {
 #skills .container {
   padding-top: 50px;
   padding-bottom: 90px;
-  margin-bottom: -20px;
 }
 
 #skills h2 {
@@ -300,7 +300,7 @@ ul {
   height: 500px;
 }
 
-/*layout styling for project page*/
+/*layout styling for my-projects page*/
 
 .next-row {
   padding-top: 60px;
@@ -333,6 +333,8 @@ ul {
 
 
 
+
+
 /*smaller than 1023px*/
 @media all and (max-width: 1023px){
   #hero {
@@ -354,6 +356,8 @@ ul {
   .column {
     min-height: 430px;
   }
+
+}
 
   /*smaller than 767px*/
 
@@ -419,6 +423,10 @@ ul {
 
     #brief .col-4 {
       padding-bottom: 0px;
+    }
+
+    #skills h2{
+      width: 100%
     }
 
   }
