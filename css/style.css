@@ -46,7 +46,7 @@ a:visited {
 
 a:hover,
 a:focus {
-  text-decoration: underline;
+  text-decoration: none;
   color: #3b3b3b;
 }
 
@@ -56,7 +56,7 @@ footer a:focus {
 }
 
 a:active {
-  text-decoration: underline;
+  text-decoration: none;
   color: #bfbfbf;
 }
 
@@ -96,6 +96,7 @@ header {
 }
 
 .logo {
+  position: relative;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
@@ -108,15 +109,37 @@ header {
   width: 33.33333%;
 }
 
+/*Animation*/
+
+.anim-typewriter {
+  animation: typewriter 4s steps(12) 1s 1 normal both;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+@keyframes typewriter {
+  0% {
+    width: 0ch;
+  }
+  100% {
+    width: 12ch;
+  }
+}
+
+
 span {
   font-weight: 300; important;
 }
+
+
 
 .logo:hover,
 .logo:visited {
   text-decoration: none;
   color: #dcdcdc;
 }
+
+
 
 /* sticky navigation bar.*/
 
@@ -136,13 +159,43 @@ nav ul li {
   padding-right: 30px;
 }
 
-nav ul li:hover {
-  text-decoration: underline;
+/*adding link animation instead/nav ul li:hover {
+text-decoration: underline;
 }
 
 nav ul li:visited,
 nav ul li:active {
-  text-decoration: none; /* what code will change the color for nav text when user is visiting an one of the under pages.*/
+text-decoration: none; /* what code will change the color for nav text when user is visiting an one of the under pages.*/
+
+
+/*link animation*/
+
+.link {
+  position: relative;
+  color: #000;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #3b3b3b;
+}
+
+.link:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #3b3b3b;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: 0.3s ease-out;
+}
+
+.link:hover:before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 #hero {
@@ -359,74 +412,92 @@ ul {
 
 }
 
-  /*smaller than 767px*/
+/*smaller than 767px*/
 
-  @media all and (max-width: 767px) {
-    #hero {
-      padding: 0 0 30px 0;
-    }
-
-    header {
-      padding: 10px 0;
-    }
-
-    nav ul li {
-      padding-right: 39px;
-    }
-
-    #hero h1, #hero p, #hero a, #about h1{
-      font-size: 1.3em;
-    }
-
-    .column {
-      min-height: unset;
-      position: unset;
-      padding-bottom: 30px;
-    }
-    #about .column {
-      padding-bottom: 0px;
-    }
-
-    .button-container {
-      position: unset;
-      bottom: 0;
-    }
-
-    .hero, footer h2, .row-contact ul:first-child, .small-text, .second-child{
-      margin-left:0px;
-    }
-
-    .hero, footer h2, .row-contact, .small-text, nav, {
-      padding-left: 0px;
-    }
-
-    .col-4 {
-      width: 100%;
-    }
-
-    #projects {
-      padding-bottom: 0;
-    }
-
-    .col-8{
-      width: 100%;
-      padding-top: unset;
-    }
-
-    .next-row {
-      padding-top: unset;
-    }
-
-    #brief .column, #discovering .column, #concepting .column, #designing .column, #testing .column, #visualising .column {
-      padding-bottom: 0px;
-    }
-
-    #brief .col-4 {
-      padding-bottom: 0px;
-    }
-
-    #skills h2{
-      width: 100%
-    }
-
+@media all and (max-width: 767px) {
+  #hero {
+    padding: 0 0 30px 0;
   }
+
+  header {
+    padding: 10px 0;
+  }
+
+  nav ul li {
+    padding-right: 39px;
+  }
+
+  #hero h1, #hero p, #hero a, #about h1{
+    font-size: 1.3em;
+  }
+
+  .column {
+    min-height: unset;
+    position: unset;
+    padding-bottom: 30px;
+  }
+  #about .column {
+    padding-bottom: 0px;
+  }
+
+  .button-container {
+    position: unset;
+    bottom: 0;
+  }
+
+  .hero, footer h2, .row-contact ul:first-child, .small-text, .second-child{
+    margin-left:0px;
+  }
+
+  .hero, footer h2, .row-contact, .small-text, nav, {
+    padding-left: 0px;
+  }
+
+  .col-4 {
+    width: 100%;
+  }
+
+  #projects {
+    padding-bottom: 0;
+  }
+
+  .col-8{
+    width: 100%;
+    padding-top: unset;
+  }
+
+  .next-row {
+    padding-top: unset;
+  }
+
+  #brief .column, #discovering .column, #concepting .column, #designing .column, #testing .column, #visualising .column {
+    padding-bottom: 0px;
+  }
+
+  #brief .col-4 {
+    padding-bottom: 0px;
+  }
+
+  #skills h2{
+    width: 100%
+  }
+
+}
+
+
+
+/*Animation*/
+
+.logo {
+  animation: 4s steps(40) 1s 1 normal both;
+}
+
+@keyframes typewriter {
+  from {width: 0;}
+  to {width: 16em;}
+}
+
+
+border-right-color: transparent;
+}
+}
