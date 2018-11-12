@@ -483,21 +483,3 @@ ul {
   }
 
 }
-
-
-
-/*Animation*/
-
-.logo {
-  animation: 4s steps(40) 1s 1 normal both;
-}
-
-@keyframes typewriter {
-  from {width: 0;}
-  to {width: 16em;}
-}
-
-
-border-right-color: transparent;
-}
-}
