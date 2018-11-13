@@ -81,6 +81,10 @@ a:active {
   bottom: 0;
 }
 
+main {
+  padding-top: 160px
+}
+
 img {
   width: 100%;
 }
@@ -93,6 +97,17 @@ img {
 
 header {
   padding: 32px 0;
+  position: fixed;
+  width: 100%;
+  background: #ffffff;
+  z-index: 9999;
+  box-shadow: 1px 2px 15px #11111111;
+}
+
+
+.logo-container {
+float: left;
+width: 33.33333%;
 }
 
 .logo {
@@ -106,13 +121,23 @@ header {
   color: #dcdcdc;
   float: left;
   padding-top: 16px;
-  width: 33.33333%;
 }
 
-/*Animation*/
+span {
+  font-weight: 300; important;
+}
+
+
+.logo:hover,
+.logo:visited {
+  text-decoration: none;
+  color: #dcdcdc;
+}
+
+/*logo Animation*/
 
 .anim-typewriter {
-  animation: typewriter 4s steps(12) 1s 1 normal both;
+  animation: typewriter 1s steps(26) 1s 1 normal both;
   overflow: hidden;
   white-space: nowrap;
 }
@@ -122,22 +147,10 @@ header {
     width: 0ch;
   }
   100% {
-    width: 12ch;
+    width: 26ch;
   }
 }
 
-
-span {
-  font-weight: 300; important;
-}
-
-
-
-.logo:hover,
-.logo:visited {
-  text-decoration: none;
-  color: #dcdcdc;
-}
 
 
 
@@ -170,17 +183,17 @@ text-decoration: none; /* what code will change the color for nav text when user
 
 /*link animation*/
 
-.link {
+.anim-link {
   position: relative;
   color: #000;
   text-decoration: none;
 }
 
-.link:hover {
+.anim-link:hover {
   color: #3b3b3b;
 }
 
-.link:before {
+.anim-link:before {
   content: '';
   position: absolute;
   width: 100%;
@@ -189,14 +202,17 @@ text-decoration: none; /* what code will change the color for nav text when user
   left: 0;
   background-color: #3b3b3b;
   transform: scaleX(0);
-  transform-origin: bottom right;
   transition: 0.3s ease-out;
 }
 
-.link:hover:before {
+.anim-link:hover:before {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+
+
+
+
 
 #hero {
   padding: 0 0 100px 0;
