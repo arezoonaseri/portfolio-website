@@ -22,17 +22,17 @@ body {
 
 h1 {
   font-size: 2.4em;
-  font-weight:700;
+  font-weight: 700;
 }
 
 h2 {
   font-size: 1.6em;
-  font-weight:700;
+  font-weight: 700;
 }
 
 h3 {
   font-size: 1em;
-  font-weight:700;
+  font-weight: 700;
 }
 
 a {
@@ -82,7 +82,7 @@ a:active {
 }
 
 main {
-  padding-top: 160px
+  padding-top: 160px;
 }
 
 img {
@@ -101,13 +101,14 @@ header {
   width: 100%;
   background: #ffffff;
   z-index: 9999;
-  box-shadow: 1px 2px 15px #11111111;
+  -webkit-box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.19);
+  -moz-box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.19);
+  box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.19);
 }
 
-
 .logo-container {
-float: left;
-width: 33.33333%;
+  float: left;
+  width: 33.33333%;
 }
 
 .logo {
@@ -124,9 +125,9 @@ width: 33.33333%;
 }
 
 span {
-  font-weight: 300; important;
+  font-weight: 300;
+  important;
 }
-
 
 .logo:hover,
 .logo:visited {
@@ -135,7 +136,6 @@ span {
 }
 
 /*logo Animation*/
-
 .anim-typewriter {
   animation: typewriter 1s steps(26) 1s 1 normal both;
   overflow: hidden;
@@ -146,21 +146,18 @@ span {
   0% {
     width: 0ch;
   }
+
   100% {
     width: 26ch;
   }
 }
 
-
-
-
 /* sticky navigation bar.*/
-
 nav {
   display: inline-block;
 }
 
-nav ul{
+nav ul {
   list-style-type: none;
   display: inline-block;
   padding: 0;
@@ -179,10 +176,7 @@ text-decoration: underline;
 nav ul li:visited,
 nav ul li:active {
 text-decoration: none; /* what code will change the color for nav text when user is visiting an one of the under pages.*/
-
-
 /*link animation*/
-
 .anim-link {
   position: relative;
   color: #000;
@@ -210,15 +204,11 @@ text-decoration: none; /* what code will change the color for nav text when user
   transform-origin: bottom left;
 }
 
-
-
-
-
 #hero {
   padding: 0 0 100px 0;
 }
 
-#hero h1{
+#hero h1 {
   margin-bottom: 0;
 }
 
@@ -237,8 +227,8 @@ text-decoration: none; /* what code will change the color for nav text when user
   font-size: 2.4em;
 }
 
-.hero, footer h2, .row-contact ul:first-child, .small-text{
-  margin-left:33.33333%;
+.hero, footer h2, .row-contact ul:first-child, .small-text {
+  margin-left: 33.33333%;
 }
 
 .hero, footer h2, .row-contact, .small-text, nav, {
@@ -252,13 +242,13 @@ text-decoration: none; /* what code will change the color for nav text when user
 }
 
 .column {
-  float:left;
-  padding:0 10px;
+  float: left;
+  padding: 0 10px;
   position: relative;
   min-height: 500px;
 }
 
-footer .column, #skills .column{
+footer .column, #skills .column {
   min-height: unset;
   padding-top: 30px;
 }
@@ -267,16 +257,11 @@ footer .column, #skills .column{
   width: 33.33333%;
 }
 
-#brief .col-4, #discovering .col-4, #concepting .col-4, #designing .col-4, #testing .col-4, #visualising .col-4 {
-  padding-top: 10px;
-}
-
 .row {
   display: table;
   margin-left: -10px;
   margin-right: -10px;
 }
-
 
 footer .row {
   width: 100%;
@@ -285,12 +270,12 @@ footer .row {
 
 footer {
   background-color: #121212;
-  color:#bfbfbf;
+  color: #bfbfbf;
   padding-bottom: 20px;
 }
 
 footer h2 {
-  color:#bfbfbf;
+  color: #bfbfbf;
   margin-top: 0;
   padding-top: 60px;
   padding-bottom: 30px;
@@ -310,20 +295,23 @@ ul {
   padding-left: 0;
   list-style-type: none;
 }
+
 .small-text {
   font-size: .8em;
   color: #5e5e5e;
   letter-spacing: .2em;
 }
 
-
 /*layout styling for about page*/
+#about {
+  margin-top: -33px;
+}
 
 #about h1 {
   display: inline-block;
 }
 
-.col-8{
+.col-8 {
   width: 66.66666%;
   padding-top: 15px;
 }
@@ -352,7 +340,7 @@ ul {
 }
 
 #skills h2 {
-  width:33.33333%
+  width: 33.33333%
 }
 
 .icon {
@@ -370,11 +358,9 @@ ul {
 }
 
 /*layout styling for my-projects page*/
-
 .next-row {
   padding-top: 60px;
 }
-
 
 #brief .column, #discovering .column, #concepting .column, #designing .column, #testing .column, #visualising .column {
   min-height: inherit;
@@ -393,19 +379,17 @@ ul {
   width: 50%;
 }
 
+/*layout styling for expert page*/
 #discovering, #designing, #visualising {
   background-color: #ededed;
 }
+
 #discovering .container, #designing .container, #visualising .container, #testing .container, #concepting .container, #brief .container {
   padding-bottom: 30px;
 }
 
-
-
-
-
 /*smaller than 1023px*/
-@media all and (max-width: 1023px){
+@media all and (max-width: 1023px) {
   #hero {
     padding: 0 0 60px 0;
   }
@@ -425,11 +409,9 @@ ul {
   .column {
     min-height: 430px;
   }
-
 }
 
 /*smaller than 767px*/
-
 @media all and (max-width: 767px) {
   #hero {
     padding: 0 0 30px 0;
@@ -443,7 +425,7 @@ ul {
     padding-right: 39px;
   }
 
-  #hero h1, #hero p, #hero a, #about h1{
+  #hero h1, #hero p, #hero a, #about h1 {
     font-size: 1.3em;
   }
 
@@ -452,6 +434,7 @@ ul {
     position: unset;
     padding-bottom: 30px;
   }
+
   #about .column {
     padding-bottom: 0px;
   }
@@ -461,8 +444,8 @@ ul {
     bottom: 0;
   }
 
-  .hero, footer h2, .row-contact ul:first-child, .small-text, .second-child{
-    margin-left:0px;
+  .hero, footer h2, .row-contact ul:first-child, .small-text, .second-child {
+    margin-left: 0px;
   }
 
   .hero, footer h2, .row-contact, .small-text, nav, {
@@ -477,7 +460,7 @@ ul {
     padding-bottom: 0;
   }
 
-  .col-8{
+  .col-8 {
     width: 100%;
     padding-top: unset;
   }
@@ -494,8 +477,7 @@ ul {
     padding-bottom: 0px;
   }
 
-  #skills h2{
-    width: 100%
+  #skills h2 {
+    width: 100%;
   }
-
 }
