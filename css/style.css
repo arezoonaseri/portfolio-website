@@ -379,6 +379,7 @@ ul {
   width: 50%;
 }
 
+
 /*layout styling for expert page*/
 #discovering, #designing, #visualising {
   background-color: #ededed;
@@ -387,6 +388,16 @@ ul {
 #discovering .container, #designing .container, #visualising .container, #testing .container, #concepting .container, #brief .container {
   padding-bottom: 30px;
 }
+
+/* Style the hamburger menu */
+.menu-toggle {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #3b3b3b;
+}
+
 
 /*smaller than 1023px*/
 @media all and (max-width: 1023px) {
@@ -409,7 +420,10 @@ ul {
   .column {
     min-height: 430px;
   }
+
 }
+/* Hide the icon that should open and close the navbar on small screens */
+
 
 /*smaller than 767px*/
 @media all and (max-width: 767px) {
@@ -477,7 +491,33 @@ ul {
     padding-bottom: 0px;
   }
 
-  #skills h2 {
-    width: 100%;
+  /*Responsiv Topnav*/
+  /* Style the navigation menu */
+  .topnav {
+    overflow: hidden;
+    position: relative;
   }
+
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #links {
+    display: none;
+  }
+
+  /* Style navigation menu links */
+  .topnav a {
+    color: #dcdcdc;
+    padding: 14px 16px;
+    display: block;
+  }
+
+  .topnav li {
+    display: block;
+    font-size: 1.5em;
+  }
+
+  /* Style the hamburger menu */
+  .menu-toggle {
+    display: block;
+  }
+
 }

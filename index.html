@@ -6,20 +6,26 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700%7CRoboto:300,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
   <body>
     <header>
-      <div class="container">
+      <div class="container topnav">
         <div class="logo-container">
           <a class="logo anim-typewriter" href="index.html">Arezoo<span>Naseri</span></a>
         </div>
+        <!-- Navigation links (hidden by default) -->
         <nav>
-          <ul>
+          <ul id="links">
             <li><a href="about.html" class="anim-link">About</a></li>
             <li><a href="my-projects.html" class="anim-link">Projects</a></li>
             <li><a href="#contact" class="anim-link">Contact</a></li>
           </ul>
+          <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+          <a href="javascript:void(0);" class="menu-toggle" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
         </nav>
       </div>
     </header>
@@ -106,6 +112,7 @@
       </p>
     </div>
   </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
