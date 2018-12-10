@@ -89,6 +89,37 @@ img {
   width: 100%;
 }
 
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #3b3b3b;
+}
+
+.container:hover .overlay {
+  opacity: 0.9;
+  padding: 0 10px;
+
+
+}
+
+.text {
+  color: #ffffff;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -236,7 +267,7 @@ text-decoration: none; /* what code will change the color for nav text when user
 }
 
 #projects {
-  background-color: #ededed;
+  background-color: #fff;
   padding-bottom: 100px;
   margin-bottom: -20px;
 }
@@ -245,7 +276,6 @@ text-decoration: none; /* what code will change the color for nav text when user
   float: left;
   padding: 0 10px;
   position: relative;
-  min-height: 500px;
 }
 
 footer .column, #skills .column {
@@ -396,6 +426,7 @@ ul {
   right: 0;
   top: 0;
   color: #3b3b3b;
+  width: 100%;
 }
 
 
