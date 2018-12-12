@@ -64,7 +64,6 @@ a:active {
   border: 1px solid #ffffff;
   background-color: #ffffff;
   padding: 10px;
-  border-radius: none;
   border-bottom: 2px solid #ffffff;
   transition: 0.2s opacity;
   display: inline-block;
@@ -87,37 +86,6 @@ main {
 
 img {
   width: 100%;
-}
-
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #3b3b3b;
-}
-
-.container:hover .overlay {
-  opacity: 0.9;
-  padding: 0 10px;
-
-
-}
-
-.text {
-  color: #ffffff;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
 }
 
 .container {
@@ -155,9 +123,8 @@ header {
   padding-top: 16px;
 }
 
-span {
+.logo span {
   font-weight: 300;
-  important;
 }
 
 .logo:hover,
@@ -208,6 +175,7 @@ nav ul li:visited,
 nav ul li:active {
 text-decoration: none; /* what code will change the color for nav text when user is visiting an one of the under pages.*/
 /*link animation*/
+
 .anim-link {
   position: relative;
   color: #000;
@@ -262,12 +230,12 @@ text-decoration: none; /* what code will change the color for nav text when user
   margin-left: 33.33333%;
 }
 
-.hero, footer h2, .row-contact, .small-text, nav, {
+.hero, footer h2, .row-contact, .small-text, nav {
   padding-left: 10px;
 }
 
 #projects {
-  background-color: #fff;
+  background-color: #ededed;
   padding-bottom: 100px;
   margin-bottom: -20px;
 }
@@ -276,6 +244,7 @@ text-decoration: none; /* what code will change the color for nav text when user
   float: left;
   padding: 0 10px;
   position: relative;
+  min-height: 500px;
 }
 
 footer .column, #skills .column {
@@ -384,7 +353,6 @@ ul {
 
 .img-cover {
   padding-top: 60px;
-  height: 500px;
 }
 
 /*layout styling for my-projects page*/
@@ -411,9 +379,6 @@ ul {
 
 
 /*layout styling for expert page*/
-#discovering, #designing, #visualising {
-  background-color: #ededed;
-}
 
 #discovering .container, #designing .container, #visualising .container, #testing .container, #concepting .container, #brief .container {
   padding-bottom: 30px;
@@ -426,7 +391,6 @@ ul {
   right: 0;
   top: 0;
   color: #3b3b3b;
-  width: 100%;
 }
 
 
@@ -467,7 +431,13 @@ ul {
   }
 
   nav ul li {
-    padding-right: 39px;
+    padding: 0px;
+    width:100%;
+
+  }
+
+  main {
+    padding-top: 100px;
   }
 
   #hero h1, #hero p, #hero a, #about h1 {
@@ -493,8 +463,12 @@ ul {
     margin-left: 0px;
   }
 
-  .hero, footer h2, .row-contact, .small-text, nav, {
+  .hero, footer h2, .row-contact, .small-text, nav {
     padding-left: 0px;
+  }
+
+  footer .column {
+    padding-top: 0;
   }
 
   .col-4 {
@@ -537,7 +511,7 @@ ul {
   /* Style navigation menu links */
   .topnav a {
     color: #dcdcdc;
-    padding: 14px 16px;
+    padding: 14px 0px;
     display: block;
   }
 
@@ -548,7 +522,11 @@ ul {
 
   /* Style the hamburger menu */
   .menu-toggle {
-    display: block;
+  right: 20px;
+  }
+
+  #contact{
+    padding-top: 20px;
   }
 
 }
