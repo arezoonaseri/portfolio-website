@@ -1,8 +1,8 @@
 /*
 Colors used
-color black #3b3b3b
-color medium gray #bfbfbf
-color light gray #dcdcdc
+color black #212121
+color medium gray #969696
+color light gray #d5d5d5
 color white #ffffff
 font-family: 'Roboto', sans-serif;
 font-family: 'Open Sans', sans-serif;
@@ -17,7 +17,7 @@ body {
   font-size: 16px;
   line-height: 1.6;
   font-weight: 400;
-  color: #121212;
+  color: #212121;
 }
 
 h1 {
@@ -36,18 +36,24 @@ h3 {
 }
 
 a {
-  color: #bfbfbf;
+  color: #969696;
   text-decoration: none;
 }
 
 a:visited {
-  color: #bfbfbf;
+  color: #969696;
 }
 
 a:hover,
 a:focus {
   text-decoration: none;
-  color: #3b3b3b;
+  color: #969696;
+}
+
+footer a,
+footer a:visited {
+  color: #d5d5d5;
+  text-decoration: none;
 }
 
 footer a:hover,
@@ -57,7 +63,7 @@ footer a:focus {
 
 a:active {
   text-decoration: none;
-  color: #bfbfbf;
+  color: #5d5d5d;
 }
 
 .button {
@@ -65,13 +71,16 @@ a:active {
   background-color: #ffffff;
   padding: 10px;
   border-bottom: 2px solid #ffffff;
-  transition: 0.2s opacity;
+  transition: 0.2s;
   display: inline-block;
 }
 
 .button:hover,
 .button:focus {
-  opacity: 0.8;
+  border: 1px solid #212121;
+  border-bottom: 2px solid #212121;
+  background-color: #212121 ;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -118,7 +127,7 @@ header {
   font-size: 1em;
   letter-spacing: .5em;
   text-decoration: none;
-  color: #dcdcdc;
+  color: #969696;
   float: left;
   padding-top: 16px;
 }
@@ -130,7 +139,7 @@ header {
 .logo:hover,
 .logo:visited {
   text-decoration: none;
-  color: #dcdcdc;
+  color: #969696;
 }
 
 /*logo Animation*/
@@ -183,7 +192,7 @@ text-decoration: none; /* what code will change the color for nav text when user
 }
 
 .anim-link:hover {
-  color: #3b3b3b;
+  color: #212121;
 }
 
 .anim-link:before {
@@ -193,7 +202,7 @@ text-decoration: none; /* what code will change the color for nav text when user
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #3b3b3b;
+  background-color: #212121;
   transform: scaleX(0);
   transition: 0.3s ease-out;
 }
@@ -235,7 +244,7 @@ text-decoration: none; /* what code will change the color for nav text when user
 }
 
 #projects {
-  background-color: #ededed;
+  background-color: #d5d5d5;
   padding-bottom: 100px;
   margin-bottom: -20px;
 }
@@ -268,13 +277,13 @@ footer .row {
 }
 
 footer {
-  background-color: #121212;
-  color: #bfbfbf;
+  background-color: #212121;
+  color: #d5d5d5;
   padding-bottom: 20px;
 }
 
 footer h2 {
-  color: #bfbfbf;
+  color: #d5d5d5;
   margin-top: 0;
   padding-top: 60px;
   padding-bottom: 30px;
@@ -297,7 +306,7 @@ ul {
 
 .small-text {
   font-size: .8em;
-  color: #5e5e5e;
+  color: #969696;
   letter-spacing: .2em;
 }
 
@@ -390,7 +399,7 @@ ul {
   position: absolute;
   right: 0;
   top: 0;
-  color: #3b3b3b;
+  color: #969696;
 }
 
 
@@ -416,6 +425,10 @@ ul {
     min-height: 430px;
   }
 
+  main {
+    padding-top: 120px;
+  }
+
 }
 /* Hide the icon that should open and close the navbar on small screens */
 
@@ -429,6 +442,10 @@ ul {
   header {
     padding: 10px 0;
   }
+
+nav{
+  display: block;
+}
 
   nav ul li {
     padding: 0px;
@@ -510,14 +527,14 @@ ul {
 
   /* Style navigation menu links */
   .topnav a {
-    color: #dcdcdc;
+    color: #969696;
     padding: 14px 0px;
     display: block;
   }
 
   .topnav li {
     display: block;
-    font-size: 1.5em;
+    font-size: 1em;
   }
 
   /* Style the hamburger menu */
