@@ -79,7 +79,7 @@ a:active {
 .button:focus {
   border: 1px solid #212121;
   border-bottom: 2px solid #212121;
-  background-color: #212121 ;
+  background-color: #212121;
   color: #fff;
   text-decoration: none;
 }
@@ -109,9 +109,9 @@ header {
   width: 100%;
   background: #ffffff;
   z-index: 9999;
-  -webkit-box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.19);
-  -moz-box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.19);
-  box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.19);
+  -webkit-box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.19);
+  box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.19);
 }
 
 .logo-container {
@@ -184,7 +184,6 @@ nav ul li:visited,
 nav ul li:active {
 text-decoration: none; /* what code will change the color for nav text when user is visiting an one of the under pages.*/
 /*link animation*/
-
 .anim-link {
   position: relative;
   color: #000;
@@ -386,9 +385,7 @@ ul {
   width: 50%;
 }
 
-
 /*layout styling for expert page*/
-
 #discovering .container, #designing .container, #visualising .container, #testing .container, #concepting .container, #brief .container {
   padding-bottom: 30px;
 }
@@ -401,7 +398,6 @@ ul {
   top: 0;
   color: #969696;
 }
-
 
 /*smaller than 1023px*/
 @media all and (max-width: 1023px) {
@@ -428,11 +424,9 @@ ul {
   main {
     padding-top: 120px;
   }
-
 }
+
 /* Hide the icon that should open and close the navbar on small screens */
-
-
 /*smaller than 767px*/
 @media all and (max-width: 767px) {
   #hero {
@@ -443,14 +437,13 @@ ul {
     padding: 10px 0;
   }
 
-nav{
-  display: block;
-}
+  nav {
+    display: block;
+  }
 
   nav ul li {
     padding: 0px;
-    width:100%;
-
+    width: 100%;
   }
 
   main {
@@ -539,11 +532,10 @@ nav{
 
   /* Style the hamburger menu */
   .menu-toggle {
-  right: 20px;
+    right: 20px;
   }
 
-  #contact{
+  #contact {
     padding-top: 20px;
   }
-
 }
