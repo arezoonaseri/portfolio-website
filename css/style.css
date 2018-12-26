@@ -1,7 +1,7 @@
 /*
 Colors used
 color black #212121
-color medium gray #969696
+color medium gray #767676 #767676
 color light gray #d5d5d5
 color white #ffffff
 font-family: 'Roboto', sans-serif;
@@ -36,18 +36,18 @@ h3 {
 }
 
 a {
-  color: #969696;
+  color: #767676;
   text-decoration: none;
 }
 
 a:visited {
-  color: #969696;
+  color: #767676;
 }
 
 a:hover,
 a:focus {
   text-decoration: none;
-  color: #969696;
+  color: #767676;
 }
 
 footer a,
@@ -127,7 +127,7 @@ header {
   font-size: 1em;
   letter-spacing: .5em;
   text-decoration: none;
-  color: #969696;
+  color: #767676;
   float: left;
   padding-top: 16px;
 }
@@ -139,7 +139,7 @@ header {
 .logo:hover,
 .logo:visited {
   text-decoration: none;
-  color: #969696;
+  color: #767676;
 }
 
 /*logo Animation*/
@@ -186,7 +186,6 @@ text-decoration: none; /* what code will change the color for nav text when user
 /*link animation*/
 .anim-link {
   position: relative;
-  color: #000;
   text-decoration: none;
 }
 
@@ -304,9 +303,10 @@ ul {
 }
 
 .small-text {
-  font-size: .8em;
-  color: #969696;
+  font-size: .6em;
+  color: #767676;
   letter-spacing: .2em;
+  margin-bottom: 0;
 }
 
 /*layout styling for about page*/
@@ -341,13 +341,9 @@ ul {
   background-color: #ededed;
 }
 
-#skills .container {
+#skills {
   padding-top: 50px;
-  padding-bottom: 90px;
-}
-
-#skills h2 {
-  width: 33.33333%
+  padding-bottom: 30px;
 }
 
 .icon {
@@ -396,7 +392,7 @@ ul {
   position: absolute;
   right: 0;
   top: 0;
-  color: #969696;
+  color: #767676;
 }
 
 /*smaller than 1023px*/
@@ -442,7 +438,7 @@ ul {
   }
 
   nav ul li {
-    padding: 0px;
+    padding: 14px 0px;
     width: 100%;
   }
 
@@ -458,6 +454,10 @@ ul {
     min-height: unset;
     position: unset;
     padding-bottom: 30px;
+  }
+
+  .column.social-media {
+    padding-bottom: 0;
   }
 
   #about .column {
@@ -486,6 +486,7 @@ ul {
   }
 
   #projects {
+    margin-bottom: 0;
     padding-bottom: 0;
   }
 
@@ -520,9 +521,9 @@ ul {
 
   /* Style navigation menu links */
   .topnav a {
-    color: #969696;
+    color: #767676;
     padding: 14px 0px;
-    display: block;
+    display: inline;
   }
 
   .topnav li {
@@ -535,7 +536,4 @@ ul {
     right: 20px;
   }
 
-  #contact {
-    padding-top: 20px;
-  }
 }
